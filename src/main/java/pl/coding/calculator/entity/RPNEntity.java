@@ -1,23 +1,33 @@
 package pl.coding.calculator.entity;
 
-import java.util.Stack;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
+import lombok.AccessLevel;
+import lombok.Getter;
+import lombok.Value;
 
+import java.util.Deque;
+
+@Value
+@Getter(AccessLevel.NONE)
 public class RPNEntity {
     
-    private final Stack<String> numbers;
+    Deque<String> numbers;
     
-    private final Stack<String> operations;
+    Deque<String> operations;
     
-    public RPNEntity(String[] numbers, String[] operations) {
-        this.numbers = new Stack();
-        this.numbers.addAll(Stream.of(numbers)
-                                  .collect(Collectors.toList()));
-        
-        this.operations = new Stack();
-        this.operations.addAll(Stream.of(operations)
-                                     .collect(Collectors.toList()));
+    public String pollLastNumber() {
+        return numbers.pollLast();
+    }
+    
+    public void addNumber(String number) {
+        numbers.add(number);
+    }
+    
+    public boolean isNotLastNumber() {
+        return numbers.size() != 1;
+    }
+    
+    public String pollFirstOperation() {
+        return operations.pollFirst();
     }
     
 }
