@@ -1,8 +1,17 @@
 package pl.coding.calculator;
 
-public class ReversePolishNotationCalculator implements Calculator {
+import lombok.RequiredArgsConstructor;
+import pl.coding.calculator.entity.RPNEntity;
+import pl.coding.calculator.splitter.RPNSplitter;
+
+@RequiredArgsConstructor
+public class ReversePolishNotationCalculator {
     
-    public int calculateValue(String p) {
+    private final RPNSplitter splitter;
+    
+    public int calculateValue(String notation) {
+        RPNEntity rpnEntity = splitter.extractRPNEntity(notation);
+        
         return 0;
     }
     
