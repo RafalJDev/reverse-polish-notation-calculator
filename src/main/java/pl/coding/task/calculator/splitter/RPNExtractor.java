@@ -1,10 +1,10 @@
-package pl.coding.calculator.splitter;
+package pl.coding.task.calculator.splitter;
 
-import pl.coding.calculator.entity.RPNEntity;
+import pl.coding.task.calculator.entity.RPNEntity;
 
 import java.util.regex.Pattern;
 
-import static pl.coding.calculator.utill.CollectionConverter.convertArrayToDeque;
+import static pl.coding.task.calculator.utill.CollectionConverter.convertArrayToDeque;
 
 public class RPNExtractor {
     

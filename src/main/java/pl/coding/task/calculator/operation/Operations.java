@@ -1,4 +1,4 @@
-package pl.coding.calculator.operation;
+package pl.coding.task.calculator.operation;
 
 enum Operations {
     

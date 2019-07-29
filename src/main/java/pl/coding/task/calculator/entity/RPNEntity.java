@@ -1,4 +1,4 @@
-package pl.coding.calculator.entity;
+package pl.coding.task.calculator.entity;
 
 import lombok.AccessLevel;
 import lombok.Getter;

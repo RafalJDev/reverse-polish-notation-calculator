@@ -1,12 +1,12 @@
-package pl.coding.calculator.operation;
+package pl.coding.task.calculator.operation;
 
 import java.math.BigInteger;
 import java.util.HashMap;
 import java.util.Map;
 
-import static pl.coding.calculator.operation.Operations.MINUS;
-import static pl.coding.calculator.operation.Operations.MULTIPLY;
-import static pl.coding.calculator.operation.Operations.PLUS;
+import static pl.coding.task.calculator.operation.Operations.MINUS;
+import static pl.coding.task.calculator.operation.Operations.MULTIPLY;
+import static pl.coding.task.calculator.operation.Operations.PLUS;
 
 public class OperationCalculator {
     

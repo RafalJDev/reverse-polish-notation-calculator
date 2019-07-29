@@ -1,9 +1,9 @@
-package pl.coding.calculator;
+package pl.coding.task.calculator;
 
 import lombok.RequiredArgsConstructor;
-import pl.coding.calculator.entity.RPNEntity;
-import pl.coding.calculator.operation.OperationCalculator;
-import pl.coding.calculator.splitter.RPNExtractor;
+import pl.coding.task.calculator.entity.RPNEntity;
+import pl.coding.task.calculator.operation.OperationCalculator;
+import pl.coding.task.calculator.splitter.RPNExtractor;
 
 import java.math.BigInteger;
 

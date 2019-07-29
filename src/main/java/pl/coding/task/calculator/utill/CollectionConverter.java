@@ -1,4 +1,4 @@
-package pl.coding.calculator.utill;
+package pl.coding.task.calculator.utill;
 
 import java.util.Deque;
 import java.util.LinkedList;
